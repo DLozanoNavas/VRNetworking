@@ -26,3 +26,6 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/InitialVR.unity
+    guid: 836c2d7e0cab8de41ac209d5f578ac79
