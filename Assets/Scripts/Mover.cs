@@ -17,7 +17,7 @@ public class Mover : MonoBehaviour
 
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (!rail)
             return;
@@ -83,7 +83,6 @@ public class Mover : MonoBehaviour
                 }
             }
         }
-        //transform.position = rail.LinearPosition(currentSeg, transition);
         transform.position = rail.PositionOnRail(currentSeg, transition, mode);
         transform.rotation = rail.Orientation(currentSeg, transition);
     }
