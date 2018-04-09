@@ -84,6 +84,6 @@ public class Mover : MonoBehaviour
             }
         }
         transform.position = rail.PositionOnRail(currentSeg, transition, mode);
-        transform.rotation = rail.Orientation(currentSeg, transition);
+        //transform.rotation = rail.Orientation(currentSeg, transition);
     }
 }
