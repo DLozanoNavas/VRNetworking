@@ -14,6 +14,7 @@ public class Mover : MonoBehaviour
     public bool isReversed;
     public bool isLooping;
     public bool pingPong;
+    public bool ManageRotation;
 
 
     // Update is called once per frame
@@ -84,6 +85,9 @@ public class Mover : MonoBehaviour
             }
         }
         transform.position = rail.PositionOnRail(currentSeg, transition, mode);
-        //transform.rotation = rail.Orientation(currentSeg, transition);
+        if (ManageRotation)
+        {
+            transform.rotation = rail.Orientation(currentSeg, transition);
+        }
     }
 }
