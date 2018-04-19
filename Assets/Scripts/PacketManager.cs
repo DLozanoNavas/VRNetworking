@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PacketManager : MonoBehaviour {
     public GameObject packet;
+    public GameObject COPPacket;
     public float InstantiationTimer = 1.0f;
     // Use this for initialization
     void Start()
@@ -34,6 +35,7 @@ public class PacketManager : MonoBehaviour {
             if (otherObj.name != "FacebookPacket")
             {
                 Destroy(otherObj.gameObject);
+                //FindObjectOfType<AudioManager>().Play("1-Stage");
                 Debug.Log("Packet eliminated");
             }
         }
