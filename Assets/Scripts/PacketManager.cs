@@ -29,7 +29,7 @@ public class PacketManager : MonoBehaviour {
     }
     void OnTriggerEnter(Collider otherObj)
     {
-        if (otherObj.gameObject.tag == "Packet")
+        if (otherObj.CompareTag("Packet"))
         {
             if (otherObj.name != "FacebookPacket")
             {
