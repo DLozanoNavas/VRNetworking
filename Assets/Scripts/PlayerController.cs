@@ -40,34 +40,45 @@ public class PlayerController : MonoBehaviour {
         //        break;
         //}
 
-        if (otherObj.name == "OSILayer2")
+        if (otherObj.name == "Stage-2")
         {
             FindObjectOfType<AudioManager>().Play("2-Stage");
         }
-        else if (otherObj.name == "OSILayer3")
+        else if (otherObj.name == "Stage-3")
         {
             FindObjectOfType<AudioManager>().Play("3-Stage");
         }
-        else if(otherObj.name == "OSILayer4")
+        else if(otherObj.name == "Stage-4")
         {
             FindObjectOfType<AudioManager>().Play("4-Stage");
         }
-        else if(otherObj.name == "OSILayer5")
+        else if(otherObj.name == "Stage-5")
         {
             FindObjectOfType<AudioManager>().Play("5-Stage");
         }
-        else if(otherObj.name == "OSILayer6")
+        else if(otherObj.name == "Stage-6")
         {
             FindObjectOfType<AudioManager>().Play("6-Stage");
         }
-        else if(otherObj.name == "OSILayer7")
+        else if(otherObj.name == "Stage-7")
         {
             FindObjectOfType<AudioManager>().Play("7-Stage");
         }
-        else if(otherObj.name == "OSILayer8")
+        else if(otherObj.name == "Stage-8")
         {
             FindObjectOfType<AudioManager>().Play("8-Stage");
         }
-
+        else if (otherObj.name == "Stage-9")
+        {
+            FindObjectOfType<AudioManager>().Play("9-Stage");
+        }
+        else if (otherObj.name == "Stage-10")
+        {
+            FindObjectOfType<AudioManager>().Play("10-Stage");
+        }
+        else if (otherObj.name == "Stage-11")
+        {
+            FindObjectOfType<AudioManager>().Play("11-Stage");
+        }
     } 
 }

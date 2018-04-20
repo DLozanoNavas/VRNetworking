@@ -4,9 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - OSI7
   - Packet
   - MasterPacket
+  - Stage
   layers:
   - Default
   - TransparentFX
