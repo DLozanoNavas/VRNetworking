@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PacketManager : MonoBehaviour {
-    public Packet p1,p2,p3,p4;
+public class PacketManager : MonoBehaviour
+{
+    public Packet p1, p2, p3, p4;
     [Range(0.0f, 50.0f)]
     public float t1Respawn;
     [Range(0.0f, 50.0f)]
@@ -56,13 +57,20 @@ public class PacketManager : MonoBehaviour {
     {
         if (otherObj.CompareTag("Packet"))
         {
-            if (otherObj.name != "FacebookPacket")
+            if (otherObj.name != "Packet-1")
             {
-                if(otherObj.name !="COPPacket")
-                Destroy(otherObj.gameObject);
-                //Debug.Log("Packet eliminated");
+                if (otherObj.name != "Packet-2")
+                {
+                    if (otherObj.name != "Packet-3")
+                    {
+                        if (otherObj.name != "Packet-4")
+                        {
+                            Destroy(otherObj.gameObject);
+                            Debug.Log("Packet eliminated");
+                        }
+                    }
+                }
             }
         }
-
     }
 }
