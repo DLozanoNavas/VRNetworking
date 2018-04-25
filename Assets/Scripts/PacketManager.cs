@@ -41,8 +41,23 @@ public class PacketManager : MonoBehaviour
                     {
                         if (otherObj.name != "Packet-4")
                         {
-                            Destroy(otherObj.gameObject);
-                            Debug.Log("Packet eliminated");
+                            if (otherObj.name != "Packet-5")
+                            {
+                                if (otherObj.name != "Packet-6")
+                                {
+                                    if (otherObj.name != "Packet-7")
+                                    {
+                                        if (otherObj.name != "Packet-8")
+                                        {
+                                            if (otherObj.name != "Packet-9")
+                                            {
+                                                Destroy(otherObj.gameObject);
+                                                Debug.Log("Packet eliminated");
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
