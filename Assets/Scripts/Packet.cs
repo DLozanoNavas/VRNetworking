@@ -6,6 +6,8 @@ public class Packet : MonoBehaviour {
 
     [Range(0.0f, 50.0f)]
     public float InstantiationTimer = 50.0f;
+    [Range(0.0f, 50.0f)]
+    public float RespawnTimer = 50.0f;
 
     // Use this for initialization
     void Start () {
