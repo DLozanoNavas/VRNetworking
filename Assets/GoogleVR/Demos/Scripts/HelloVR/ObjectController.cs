@@ -29,7 +29,8 @@ namespace GoogleVR.HelloVR
         public Material gazedAtMaterial;
         private const string INFO_MESSAGE_CANVAS_NAME = "InfoMessageCanvas";
         private const string INFO_MESSAGE_TEXT_NAME = "InfoMessageText";
-        private const string INFO_MESSAGE_FACEBOOK_PACKET = "facebook.com";
+        private const string INFO_MESSAGE_PACKET = "1/5 De: Tu IP (198.245.1.16) \n Para: http://www.facebook.com";
+        private const string INFO_ENCRYPTED_MESSAGE_PACKET = "1/5 De: Tu IP (198.245.1.16) \n Para: http://www.facebook.com";
         void Start()
         {
             startingPosition = transform.localPosition;
@@ -52,7 +53,7 @@ namespace GoogleVR.HelloVR
             if (inactiveMaterial != null && gazedAtMaterial != null)
             {
                 // TODO: Add random info to packets
-                infoMessageText.text = INFO_MESSAGE_FACEBOOK_PACKET;
+                infoMessageText.text = INFO_MESSAGE_PACKET;
                 infoMessageCanvas.SetActive(true);
                 renderer.material = gazedAt ? gazedAtMaterial : inactiveMaterial;
                 return;
