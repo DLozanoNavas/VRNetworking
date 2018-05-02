@@ -17,10 +17,10 @@ public class Packet : MonoBehaviour {
 
     void OnTriggerEnter(Collider otherObj)
     {
-        if (otherObj.name.Contains("Packet")) { 
+        if (otherObj.name.Contains("Packet-")) { 
             //TODO: Modify behaviour for every Stage on the Packet rail
             ExplosionEffect.Play();
-            Destroy(this);
+            this.gameObject.SetActive(false);
         }
 
     }
