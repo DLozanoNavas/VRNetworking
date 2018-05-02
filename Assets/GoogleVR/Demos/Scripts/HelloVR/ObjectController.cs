@@ -68,7 +68,7 @@ namespace GoogleVR.HelloVR
             AddToList(PacketPorts, new string[] {
             "25 (SMTP - Mail)",
             "80 (HTTP - Web)",
-            "xx (UDP - Skype Packet)",
+            "3680 (UDP - Skype Packet)",
             "22 (SSH - Secure Shell)"});
             string randomPacketReciver = PacketReciver[Random.Range(0, PacketReciver.Count)];
             string randomPacketSender = PacketSender[Random.Range(0, PacketSender.Count)];
