@@ -14,6 +14,7 @@
 
 namespace GoogleVR.HelloVR
 {
+    using System.Collections.Generic;
     using UnityEngine;
     using UnityEngine.UI;
 
@@ -29,10 +30,53 @@ namespace GoogleVR.HelloVR
         public Material gazedAtMaterial;
         private const string INFO_MESSAGE_CANVAS_NAME = "InfoMessageCanvas";
         private const string INFO_MESSAGE_TEXT_NAME = "InfoMessageText";
-        private const string INFO_MESSAGE_PACKET = "1/5 De: Tu IP (198.245.1.16) \n Para: http://www.facebook.com";
-        private const string INFO_ENCRYPTED_MESSAGE_PACKET = "1/5 De: Tu IP (198.245.1.16) \n Para: http://www.facebook.com";
+        public string INFO_MESSAGE_PACKET= "";
+        public string INFO_ENCRYPTED_MESSAGE_PACKET= "";
+        private List<string> PacketSender = new List<string>();
+        private List<string> PacketReciver = new List<string>();
+        private List<string> PacketType = new List<string>();
+        private List<string> PacketPorts = new List<string>();
+        private string PacketInfo = "Paquete: {0}/{1} \nDe:{2}\n Para: {3}\nTipo: {4}\nPuerto:{5}";
+
+        void AddToList(List<string> l, params string[] list)
+        {
+            for (int i = 0; i < list.Length; i++)
+            {
+                l.Add(list[i]);
+            }
+        }
+
         void Start()
         {
+            AddToList(PacketReciver, new string[] {
+            "http://microsoft.com",
+            "http://google.com",
+            "http://facebook.com",
+            "http://fenixalliance.com.co",
+            "http://twitter.com",
+            "http://netflix.com",
+            "http://apple.com",
+            "http://unity.com"});
+            AddToList(PacketSender, new string[] {
+            "192.168.0.1 (La IP del portátil)",
+            "192.168.0.2 (La IP del TV)",
+            "192.168.0.4 (La IP del teléfono)",
+            "192.168.0.5 (La IP de la consola)"});
+            AddToList(PacketType, new string[] {
+            "TCP/IP Packet",
+            "UDP Packet"});
+            AddToList(PacketPorts, new string[] {
+            "25 (SMTP - Mail)",
+            "80 (HTTP - Web)",
+            "xx (UDP - Skype Packet)",
+            "22 (SSH - Secure Shell)"});
+            string randomPacketReciver = PacketReciver[Random.Range(0, PacketReciver.Count)];
+            string randomPacketSender = PacketSender[Random.Range(0, PacketSender.Count)];
+            int randomPackageCountRequestTotal = Random.Range(13, 25);
+            int randomPackageCountRequest = Random.Range(0, 12);
+            string randomPacketType = PacketType[Random.Range(0, PacketType.Count)];
+            string randomPacketPort = PacketPorts[Random.Range(0, PacketPorts.Count)];
+            INFO_MESSAGE_PACKET = string.Format(PacketInfo, randomPackageCountRequest, randomPackageCountRequestTotal, randomPacketSender, randomPacketReciver, randomPacketType, randomPacketPort);
             startingPosition = transform.localPosition;
             renderer = GetComponent<Renderer>();
             SetGazedAt(false);

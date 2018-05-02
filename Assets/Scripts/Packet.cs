@@ -8,19 +8,19 @@ public class Packet : MonoBehaviour {
     public float InstantiationTimer = 50.0f;
     [Range(0.0f, 50.0f)]
     public float RespawnTimer = 50.0f;
-
+    public ParticleSystem ExplosionEffect;
     // Use this for initialization
-    void Start () {
-		
-	}
+    void Awake () {
+    }
 	
 	// Update is called once per frame
 
     void OnTriggerEnter(Collider otherObj)
     {
-        if (otherObj.CompareTag("Stage"))
-        {
+        if (otherObj.name.Contains("Packet")) { 
             //TODO: Modify behaviour for every Stage on the Packet rail
+            ExplosionEffect.Play();
+            Destroy(this);
         }
 
     }
