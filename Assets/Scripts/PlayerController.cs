@@ -15,30 +15,6 @@ public class PlayerController : MonoBehaviour {
     }
     void OnTriggerEnter(Collider otherObj)
     {
-        //switch (otherObj.name)
-        //{
-        //    case "OSILayer2":
-        //        FindObjectOfType<AudioManager>().Play("2-Stage");
-        //        break;
-        //    case "OSILayer3":
-        //        FindObjectOfType<AudioManager>().Play("3-Stage");
-        //        break;
-        //    case "OSILayer4":
-        //        FindObjectOfType<AudioManager>().Play("4-Stage");
-        //        break;
-        //    case "OSILayer5":
-        //        FindObjectOfType<AudioManager>().Play("5-Stage");
-        //        break;
-        //    case "OSILayer6":
-        //        FindObjectOfType<AudioManager>().Play("6-Stage");
-        //        break;
-        //    case "OSILayer7":
-        //        FindObjectOfType<AudioManager>().Play("7-Stage");
-        //        break;
-        //    case "OSILayer8":
-        //        FindObjectOfType<AudioManager>().Play("8-Stage");
-        //        break;
-        //}
 
         if (otherObj.name == "Stage-2")
         {

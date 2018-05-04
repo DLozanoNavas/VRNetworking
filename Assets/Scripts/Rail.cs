@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
+//using UnityEditor;
 
 public enum PlayMode
 {
@@ -76,7 +76,7 @@ public class Rail : MonoBehaviour {
     {
         for (int i = 0; i < nodes.Length-1; i++)
         {
-            Handles.DrawDottedLine(nodes[i].position, nodes[i + 1].position, 3.0f);
+           // Handles.DrawDottedLine(nodes[i].position, nodes[i + 1].position, 3.0f);
         }
     }
 } 

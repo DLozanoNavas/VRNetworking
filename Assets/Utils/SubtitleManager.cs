@@ -12,8 +12,7 @@ public class SubtitleManager : MonoBehaviour
 
     private void Start()
     {
-        //m_Text = GetComponent<Text>();
-        // Init subtitles and delta times
+
     }
 
 
@@ -26,8 +25,7 @@ public class SubtitleManager : MonoBehaviour
             {
                 if (Time.timeSinceLevelLoad > (float)s.time)
                 {
-                    
-                    m_Text.text = string.Format("Presenter: {0}", s.subtitle.text);
+                    m_Text.text = string.Format("{0}", s.subtitle);
                 }
             }
         }
