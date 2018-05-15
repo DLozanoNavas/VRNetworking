@@ -1,0 +1,48 @@
+1.0 ~ 1.	Works! Por primera vez en la historia, la gente y las máquinas están trabajando juntas, realizando un sueño. |
+2.0 ~ 2.	Una fuerza unida que no conoce barreras geográficas y que no distingue entre la raza, creencia o color. |
+3.0 ~ 3.	Una nueva era en la donde las comunicaciones realmente unen a las personas. Este es el mundo de la internet. |
+4.0 ~ 4.	¿Quieres saber cómo funciona? Un clic aquí basta para empezar tu viaje en la red.|
+5.0 ~ 5.	 Works!  ¿Pero qué sucede cuando das click al link? Empiezas un flujo de información que viaja dentro de tu propia red, en donde el Señor IP la empaca, etiqueta y envía. |
+6.0 ~ 6.	Cada paquete está limitado en su tamaño. La oficina de envíos debe decidir cómo dividir la información y cómo empacarla. |
+7.0 ~ 7.	El paquete necesita alguna información importante como la dirección del transmisor, la dirección del receptor y el tipo de paquete que es.|
+8.0 ~ 8.	Como algunos paquetes se dirigen hacia la internet pública, también reciben la dirección de un servidor Proxy, el cuál tiene una función específica que veremos luego.|
+9.0 ~ 9.	El paquete es ahora lanzado hacia tu Red de Área Local o “LAN”. Esta red es usada para conectar todos los computadores, impresoras, routers y dispositivos para intercambio de información dentro de las instalaciones del edificio. |
+10.0 ~ 10.	La red LAN es un lugar muy descontrolado y, desafortunadamente, los accidentes pueden ocurrir.|
+11.0 ~ 11.	Las vías de la LAN son transcurridas por todo tipo de información. Algunos son paquetes IP, Correos, paquetes UDP, que viajan contra el tráfico, como es usual.|
+12.0 ~ 12.	El Router local lee la dirección y, si es necesario, levanta el paquete hacia otra red.|
+13.0 ~ 13.	Ahh, el Router. Un símbolo de control en un mundo aparentemente desordenado. |
+14.0 ~ 14.	Metódico, sistemático, considerado y, a veces, un poco despistado. Pero al menos es exacto. Bueno, la mayoría de las veces.|
+15.0 ~ 15.	A medida que los paquetes pasan el Router, se abren camino hacia la internet corporativa, o Intranet y allí, el Router Switch.|
+16.0 ~ 16.	Un poco más eficiente que el Router, el Switch se las arregla sencillamente con los paquetes, definitivamente enrutándolos por su ruta. Casi como un mago del pinball, podría decirse.|
+17.0 ~ 17.	A medida que los paquetes llegan a su destino, son recogidos por la Interfaz de Red, listos para ser enviados a la siguiente etapa. En este caso, el Proxi.|
+18.0 ~ 18.	El proxi es usado en muchas compañías como una especie de hombre en el medio que ayuda a reducir la carga en la conexión a Internet y por motivos de seguridad también.|
+19.0 ~ 19.	Como puedes notar, los paquetes varían en su tamaño, dependiendo de su contenido. |
+20.0 ~ 20.	El proxy abre el paquete y busca por la dirección web URL. Si esta es aceptable, el paquete es lanzado a la internet.|
+21.0 ~ 21.	Existen, sin embargo, algunas direcciones que no cumplen con las políticas de la compañía, y se lidia con ellos inmediatamente, tenlo por seguro.|
+22.0 ~ 22.	Para aquellos que lo consiguen, están de nuevo en la ruta.|
+23.0 ~ 23.	Siquiente parada, El Firewall.|
+24.0 ~ 24.	El Firewall corporativo sirve dos funciones. Previene algunas cosas terribles de entrar a la Intranet, y también previene que alguna información sensible sea lanzada fuera a la Internet.|
+25.0 ~ 25.	Una vez pasan el Firewal, un Router recoge los paquetes y los deposita en una ruta nueva, o “Banda ancha”, como le decimos.|
+26.0 ~ 26.	Por supuesto, la ruta no es lo suficientemente ancha como para atrapar todos los paquetes.|
+27.0 ~ 27.	Ahora, podrías preguntarte qué pasa con todos esos paquetes que no lo consiguen por el camino. Bueno, cuando el Señor IP no recibe la notificación de que un paquete ha llegado, simplemente envía un paquete de reemplazo.|
+28.0 ~ 28.	Estamos listos para entrar al mundo de la internet. Una araña de redes interconectadas alrededor de todo el mundo. Aquí, Routers y Switchs establecen vínculos entre redes.|
+29.0 ~ 29.	Pero la web es un entorno completamente distinto al que encontrarás dentro de las paredes protectoras de tu LAN.|
+30.0 ~ 30.	Aquí afuera es el salvaje oeste. Mucho espacio y muchas oportunidades. Millones de cosas por explorar y lugares por visitar. Gracias al poco control y regulaciones, nuevas ideas encuentran terreno fértil, empujando los límites de sus posibilidades.|
+31.0 ~ 31.	Pero debido a esta libertad, ciertos peligros también nacen. Nunca sabes cuándo te encontrarás con un terrible “Ping de la muerte”.|
+32.0 ~ 32.	Una versión especial de un Ping normal con el que algún idiota pensó en molestar diferentes Hosts.|
+33.0 ~ 33.	Las rutas que nuestros paquetes toman pueden ser vía satélite, líneas telefónicas, señales inalámbricas e, incluso, cable trans-oceánico.|
+34.0 ~ 34.	No siempre toman las rutas más cortas o rápidas, pero llegarán… eventualmente. Tal vez esa sea la razón por la que es llamado “La Espera Mundial”, |
+35.0 ~ 35.	aunque cuando todo funciona a la perfección, podrían darle la vuelta al mundo 5 veces en lo que cae una moneda. Literalmente, y normalmente por menos del precio de una llamada. |
+36.0 ~ 36.	Casi al final de nuestro destino, encontraremos otro Firewall. Dependiendo de tu perspectiva como un paquete, el Firewall podría ser un bastión de seguridad o un terrible adversario. |
+37.0 ~ 37.	Todo depende del lado en el que te encuentras, y de las intenciones que traes. El Firewall está diseñado para dejar pasar únicamente esos paquetes que cumplen con sus criterios. |
+38.0 ~ 38.	Este Firewall está operando en el puerto 80 y 25. Todos los intentos de entrar en otros puertos, están cerrados por negocios.|
+39.0 ~ 39.	El puerto 25 es para paquetes en E-Mail, mientras que el puerto 80 es la entrada para paquetes de Internet hacia el servidor web.|
+40.0 ~ 40.	Dentro del Firewall los paquetes son revisados con más detenimiento. Algunos para fácilmente por las aduanas, otros son un poco dudosos, pero el oficial del Firewall no es fácil de engañar.|
+41.0 ~ 41.	Como cuando este paquete “Ping de la Muerte” quiere hacerse pasar por un paquete Ping normal, obtiene su merecido.|
+42.0 ~ 42.	Para aquellos paquetes afortunados como para lograrlo hasta aquí, el viaje está casi terminado.|
+43.0 ~ 43.	Solo queda una espera en la interfaz para ser atendido por el servidor web. Hoy en día, un servidor web puede correr en muchas cosas, desde una videocámara hasta el computador en tu escritorio y, por qué no, en tu refrigerador.|
+44.0 ~ 44.	Con la configuración adecuada puedes averiguar si tienes los ingredientes necesarios para preparar Pollo Cacciatore o si deberías ir a hacer mercado. Recuerda que este es el mundo de la Internet. ¡Casi todo es posible!|
+45.0 ~ 45.	Uno a uno, los paquetes son recibidos, abiertos y desempacados. La información que contienen, es decir, tu petición, es enviada a la aplicación del servidor web y el paquete mismo es reciclado.|
+46.0 ~ 46.	Listo para ser usado de nuevo y llenado con tu información solicitada. Etiquetado y enviado de vuelta hacia ti. Pasando el Firewall, Routers y de nuevo a la Internet. |
+47.0 ~ 47.	Por entre tu firewall y hacia tu interfaz, listo para alimentar tu navegador con la información que solicitaste. Es decir, esta película.|
+48.0 ~ 48.	Contentos con sus esfuerzos y confiando en un mundo mejor, nuestros valientes paquetes de datos viajan incansablemente, confiando en que habrán servido bien a sus maestros y, con ello, un final feliz.

@@ -1,34 +1,41 @@
 ﻿using System;
+using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 
-
-[RequireComponent(typeof(Text))]
 public class SubtitleManager : MonoBehaviour
 {
-    public Subtitle[] subtitles;
+    private String[] subtitles;
     public Text m_Text;
-
+    public TextAsset Subtitles_text;
 
     private void Start()
     {
-
+        char[] e = {'|'};
+        subtitles = Subtitles_text.text.Split(e);
     }
 
 
     private void Update()
     {
         // measure times to display subtitles frames per second
-        if (subtitles.Length != 0)
+
+        foreach (String s in subtitles)
         {
-            foreach (Subtitle s in subtitles)
+            float time = GetTime(s);
+            if (Time.timeSinceLevelLoad > time)
             {
-                if (Time.timeSinceLevelLoad > (float)s.time)
-                {
-                    m_Text.text = string.Format("{0}", s.subtitle);
-                }
+                m_Text.text = string.Format("{0}", s);
             }
+
         }
+    }
+
+    private float GetTime(string s)
+    {
+        String[] splitted = s.Split('~');
+        float time = float.Parse(splitted[0], System.Globalization.CultureInfo.InvariantCulture);
+        return time;
     }
 }
 
